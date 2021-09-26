@@ -1,0 +1,68 @@
+:root {
+  --color-primary: #ffd700;
+
+  --color-grey-light: rgb(133, 127, 127); // for paragraph fonts
+  --color-grey-light-2: rgb(199, 189, 189);
+  --color-grey-light-3: rgb(238, 235, 235); // for section background color
+
+  --color-dark: black;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+}
+$font-logo: "Great Vibes", cursive, sans-serif;
+$font-text: "Montserrat", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%; // 1rem = 16px
+  @media (max-width: 75rem) {
+    font-size: 80%;
+  }
+  @media (max-width: 56.25rem) {
+    font-size: 70%;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: $font-text;
+}
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.container {
+  max-width: 120rem;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  @media (max-width: 56.25rem) {
+    width: 90%;
+  }
+}
+
+.section-title {
+  font-size: 3rem;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+.section-subtitle {
+  font-size: 1.5rem;
+  color: var(--color-grey-light-2);
+  font-style: italic;
+}
+.item-title {
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
